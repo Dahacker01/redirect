@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captain Moroni | The Title of Liberty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --gold:#d4af37;
+    --dark:#0f172a;
+    --navy:#1e293b;
+    --light:#f8fafc;
+    --crimson:#8b0000;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(180deg,#0b1020,#1e293b);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at center,
+    rgba(212,175,55,.15),transparent 60%);
+}
+
+.hero-content{
+    max-width:900px;
+    padding:40px;
+    z-index:2;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:5rem;
+    color:var(--gold);
+    text-shadow:0 0 25px rgba(212,175,55,.6);
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-family:'Cinzel',serif;
+    font-size:2rem;
+    letter-spacing:3px;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+    max-width:700px;
+    margin:auto;
+}
+
+.flag{
+    margin:40px auto 0;
+    padding:18px 30px;
+    border:2px solid var(--gold);
+    display:inline-block;
+    font-family:'Cinzel',serif;
+    font-size:1.2rem;
+    color:var(--gold);
+    background:rgba(139,0,0,.3);
+    box-shadow:0 0 20px rgba(212,175,55,.25);
+}
+
+/* Sections */
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    font-family:'Cinzel',serif;
+    color:var(--gold);
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,.2);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(212,175,55,.25);
+}
+
+.card h3{
+    color:var(--gold);
+    margin-bottom:15px;
+    font-family:'Cinzel',serif;
+}
+
+/* Quote */
+.quote{
+    background:linear-gradient(135deg,var(--crimson),#3a0000);
+    text-align:center;
+}
+
+.quote blockquote{
+    font-size:2rem;
+    max-width:900px;
+    margin:auto;
+    font-style:italic;
+    line-height:1.6;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#cbd5e1;
+}
+
+.glow{
+    color:var(--gold);
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Captain Moroni</h1>
+        <h2>Defender of Liberty & Faith</h2>
+
+        <p>
+            A tribute to Captain Moroni, remembered in the Book of Mormon
+            for his courage, leadership, integrity, and unwavering devotion
+            to protecting his people and their freedoms.
+        </p>
+
+        <div class="flag">
+            "In Memory of Our God, Our Religion, and Freedom"
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2 class="section-title">The Legacy</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>⚔ Courage</h3>
+            <p>
+                Captain Moroni stood firm in times of conflict and inspired
+                others through strength, conviction, and determination.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Leadership</h3>
+            <p>
+                He united his people around shared principles and demonstrated
+                leadership rooted in service and responsibility.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏛 Liberty</h3>
+            <p>
+                The Title of Liberty became a symbol of freedom, faith,
+                family, and the preservation of righteous principles.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="quote">
+    <blockquote>
+        “If all men had been, and were, and ever would be,
+        like unto Moroni, behold, the very powers of hell
+        would have been shaken forever.”
+    </blockquote>
+</section>
+
+<section>
+    <h2 class="section-title">The Title of Liberty</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📜 A Banner of Purpose</h3>
+            <p>
+                Moroni raised a standard to remind his people of the ideals
+                they cherished and were willing to defend.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✨ A Symbol of Unity</h3>
+            <p>
+                The banner rallied communities together around faith,
+                liberty, and commitment to one another.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 An Enduring Inspiration</h3>
+            <p>
+                Generations have looked to the story of the Title of Liberty
+                as a reminder of courage and devotion to noble causes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>
+        Dedicated to <span class="glow">Captain Moroni</span> —
+        a symbol of courage, faith, and liberty.
+    </p>
+</footer>
+
+</body>
+</html>
