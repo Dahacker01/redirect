@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FREE DOUGHNUTS 🍩 BDA #6</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', Arial, sans-serif;
+      background: radial-gradient(circle at top, #fff2cc, #ffcc66, #ff9966);
+      color: #2b2b2b;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      animation: popIn 1s ease-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .sub {
+      font-size: 1.3em;
+      margin-top: 10px;
+      opacity: 0.95;
+    }
+
+    .card {
+      background: white;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: floatIn 1.2s ease-out;
+    }
+
+    .big {
+      font-size: 1.8em;
+      margin: 10px 0;
+    }
+
+    .pulse {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #ff4d4d;
+      color: white;
+      border-radius: 50px;
+      font-size: 1.2em;
+      margin-top: 15px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .info {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .emoji {
+      font-size: 2em;
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      opacity: 0.7;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes floatIn {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: red;
+      animation: fall 4s linear infinite;
+      top: -10px;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="emoji">🍩🔥🍩</div>
+  <h1>FREE DOUGHNUTS</h1>
+  <div class="sub">This is not a drill.</div>
+</header>
+
+<div class="card">
+  <div class="big">You’re invited.</div>
+  <p class="info">
+    Fresh doughnuts. Warm vibes. Zero cost.
+  </p>
+
+  <p class="info"><strong>📍 Location:</strong> BDA #6</p>
+  <p class="info"><strong>🕟 Time:</strong> 4:30 PM</p>
+  <p class="info"><strong>📅 Every Fast Sunday</strong></p>
+
+  <div class="pulse">DON’T MISS IT 🍩</div>
+</div>
+
+<div class="card">
+  <div class="big">Why people come:</div>
+  <p>✔ Actually really good doughnuts</p>
+  <p>✔ Chill post-church hangout</p>
+  <p>✔ You will regret missing it</p>
+</div>
+
+<footer>
+  see you at BDA #6 🍩
+</footer>
+
+<script>
+  // simple confetti
+  for (let i = 0; i < 25; i++) {
+    let confetti = document.createElement("div");
+    confetti.className = "confetti";
+    confetti.style.left = Math.random() * 100 + "vw";
+    confetti.style.background = ["#ff4d4d","#ffd24d","#4dd2ff","#8aff4d"][Math.floor(Math.random()*4)];
+    confetti.style.animationDuration = (2 + Math.random() * 3) + "s";
+    document.body.appendChild(confetti);
+  }
+</script>
+
+</body>
+</html>
