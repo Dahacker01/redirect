@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>$5 Crumbl Gift Card Giveaway</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+:root{
+    --pink:#ff5ca8;
+    --pink-dark:#ff3d93;
+    --purple:#7b5cff;
+    --dark:#1f2937;
+}
+
 *{
     margin:0;
     padding:0;
@@ -18,102 +25,122 @@ body{
     font-family:'Poppins',sans-serif;
     min-height:100vh;
     display:flex;
-    justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#ff6b6b,#ff9f43,#feca57);
-    overflow:hidden;
+    justify-content:center;
+    background:linear-gradient(135deg,var(--purple),var(--pink));
+    padding:20px;
+    color:white;
 }
 
-.container{
-    background:white;
-    padding:50px;
-    border-radius:25px;
+.card{
+    width:100%;
+    max-width:420px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:28px;
+    padding:32px 24px;
     text-align:center;
-    max-width:700px;
-    width:90%;
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-    animation:pop .8s ease;
-}
-
-@keyframes pop{
-    from{
-        opacity:0;
-        transform:scale(.8);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
 }
 
 .emoji{
-    font-size:5rem;
-    margin-bottom:15px;
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.badge{
+    display:inline-block;
+    background:white;
+    color:var(--pink-dark);
+    font-weight:700;
+    padding:8px 16px;
+    border-radius:999px;
+    margin-bottom:18px;
+    font-size:.9rem;
 }
 
 h1{
-    font-size:3rem;
-    color:#222;
-    margin-bottom:15px;
+    font-size:2rem;
+    line-height:1.15;
+    margin-bottom:12px;
 }
 
 .reward{
     font-size:4rem;
-    font-weight:700;
-    color:#ff6b6b;
-    margin:20px 0;
+    font-weight:800;
+    margin:18px 0;
+    text-shadow:0 4px 20px rgba(0,0,0,.2);
 }
 
 .message{
-    font-size:1.3rem;
-    color:#555;
-    margin-bottom:30px;
+    font-size:1.05rem;
+    line-height:1.6;
+    opacity:.95;
+    margin-bottom:28px;
 }
 
-.phone{
-    display:inline-block;
-    background:#ff6b6b;
-    color:white;
-    padding:18px 35px;
-    border-radius:50px;
-    font-size:2rem;
-    font-weight:700;
+.cta{
+    display:block;
+    width:100%;
+    background:white;
+    color:var(--pink-dark);
     text-decoration:none;
-    transition:.3s;
+    font-weight:700;
+    font-size:1.25rem;
+    padding:18px;
+    border-radius:18px;
+    transition:.2s;
 }
 
-.phone:hover{
-    background:#ff5252;
-    transform:translateY(-3px);
+.cta:active{
+    transform:scale(.98);
 }
 
 .note{
-    margin-top:25px;
-    color:#777;
-    font-size:.95rem;
+    margin-top:18px;
+    font-size:.9rem;
+    opacity:.85;
+}
+
+@media (max-width:480px){
+    h1{
+        font-size:1.7rem;
+    }
+
+    .reward{
+        font-size:3.2rem;
+    }
+
+    .cta{
+        font-size:1.1rem;
+        padding:16px;
+    }
 }
 </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="emoji">🎉🍪🎉</div>
+<div class="card">
+    <div class="emoji">🍪🎉</div>
 
-    <h1>FREE GIVEAWAY!</h1>
+    <div class="badge">LIMITED TIME</div>
 
-    <div class="reward">$5 Crumbl Gift Card</div>
+    <h1>First Person Wins!</h1>
+
+    <div class="reward">$5</div>
 
     <p class="message">
-        The first person to text the number below wins a
-        <strong>$5 Crumbl Gift Card!</strong>
+        The first person to text the number below gets a
+        <strong>$5 Crumbl Gift Card</strong>.
     </p>
 
-    <a class="phone" href="sms:8018030957">
-        Text 801-803-0957
+    <a class="cta" href="sms:8018030957">
+        📱 Text 801-803-0957
     </a>
 
     <p class="note">
-        First text received wins. Good luck! 🍪
+        Good luck! 🍪
     </p>
 </div>
 
